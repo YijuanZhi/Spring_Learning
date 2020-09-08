@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <context:annotation-config/>-->
+
+    <context:component-scan base-package="com.antra" />
+<!--  We are going to use @Component in the class to scan the bean components in "com.antra" package  -->
+
+<!--    <bean id="numberGenerator" class="com.antra.NumberGeneratorImpl" />-->
+<!--&lt;!&ndash;    1. init-method could automatically run when bean is created (init-method="reset")&ndash;&gt;-->
+<!--&lt;!&ndash;    2.  we can also use the annotation(@PostConstruct) to let spring run it itself&ndash;&gt;-->
+<!--    <bean id="game" class="com.antra.GameImpl">-->
+<!--        &lt;!&ndash;  1. constructor based dependency injection  &ndash;&gt;-->
+<!--        &lt;!&ndash;    mainly used for mandatory dependencies for good practice    &ndash;&gt;-->
+<!--&lt;!&ndash;         <constructor-arg ref="numberGenerator"/>&ndash;&gt;-->
+
+<!--        &lt;!&ndash;  2. setter based dependency injection  &ndash;&gt;-->
+<!--        &lt;!&ndash;   mainly used for optional dependencies for good practice     &ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="numberGenerator" ref="numberGenerator" />&ndash;&gt;-->
+<!--    </bean>-->
+
+<!--Used for @PostConstruct and @PreDestroy, but we can just use xmlns of springframework context to include all of these-->
+<!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />-->
+
+</beans>
