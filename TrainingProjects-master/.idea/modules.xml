@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ServletJSP/DeptEmp.iml" filepath="$PROJECT_DIR$/ServletJSP/DeptEmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBC/DeptEmp_JDBC.iml" filepath="$PROJECT_DIR$/JDBC/DeptEmp_JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring JPA/DeptEmp_Spring_JPA.iml" filepath="$PROJECT_DIR$/Spring JPA/DeptEmp_Spring_JPA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringIOCDemo/SpringIOCDemo.iml" filepath="$PROJECT_DIR$/SpringIOCDemo/SpringIOCDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrainingProjects.iml" filepath="$PROJECT_DIR$/TrainingProjects.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="DeptEmp_Spring_JPA" />
+        <module name="DeptEmp_JDBC" />
+        <module name="DeptEmp" />
+        <module name="SpringIOCDemo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="DeptEmp" target="1.8" />
+      <module name="DeptEmp_JDBC" target="1.8" />
+      <module name="DeptEmp_Spring_JPA" target="1.8" />
+      <module name="SpringIOCDemo" target="1.8" />
+      <module name="TrainingProjects" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
