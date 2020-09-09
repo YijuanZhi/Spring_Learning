@@ -3,15 +3,22 @@ package com.antra.service;
 import com.antra.model.TodoData;
 import com.antra.model.TodoItem;
 import lombok.NonNull;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TodoItemServiceImpl implements TodoItemService{
 
-    //fields
-    private final TodoData data = new TodoData();
+//    fields
+    private final TodoData data;
 
-    //constr
+//    constructor
+    @Autowired
+    public TodoItemServiceImpl(TodoData todoData) {
+        this.data = todoData;
+    }
+
+//    public method
     @Override
     public void addItem(@NonNull TodoItem toAdd) {
         data.addItem(toAdd);

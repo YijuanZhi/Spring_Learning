@@ -1,5 +1,6 @@
 package com.antra.config;
 
+import com.antra.model.TodoData;
 import com.antra.util.ViewNames;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -26,6 +27,11 @@ public class WebConfig implements WebMvcConfigurer {
         viewResolver.setPrefix(RESOLVER_PREFIX);
         viewResolver.setSuffix(RESOLVER_SUFFIX);
         return viewResolver;
+    }
+
+    @Bean
+    public TodoData todoData() {
+        return new TodoData();
     }
 
     @Override
