@@ -1,7 +1,11 @@
-com/antra/AppConfig.class
+com/antra/GuessCount.class
+com/antra/config/GameConfig.class
+com/antra/MinNumber.class
 com/antra/NumberGeneratorImpl.class
 com/antra/Game.class
+com/antra/MaxNumber.class
 com/antra/GameImpl.class
 com/antra/NumberGenerator.class
 com/antra/MessageGeneratorImpl.class
+com/antra/config/AppConfig.class
 com/antra/MessageGenerator.class
