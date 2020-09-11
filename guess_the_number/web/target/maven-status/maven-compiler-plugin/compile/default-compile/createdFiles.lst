@@ -1,6 +1,7 @@
 com/antra/util/ViewNames.class
 com/antra/util/AttributeNames.class
-com/antra/WebMain.class
-com/antra/config/WebConfig.class
 com/antra/controller/GameController.class
+com/antra/WebMain.class
+com/antra/util/thymeleaf/DecoupledLogicSetup.class
+com/antra/config/WebConfig.class
 com/antra/util/GameMappings.class

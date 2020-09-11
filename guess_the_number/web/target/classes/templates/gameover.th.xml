@@ -1,0 +1,9 @@
+<thlogic>
+    <!-- ~{} is used for th:replace for the thymeleaf fragment -->
+    <!--    th:text will replace the text between the a tag, th:href will replace the href-->
+    <!--    @{} is for url. ${} for values   -->
+    <attr sel="#resultMessage"  th:text="${__${T(com.antra.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#restart"  th:href="@{__${T(com.antra.util.GameMappings).RESTART}__}"/>
+    <attr sel="#home"  th:href="@{__${T(com.antra.util.GameMappings).HOME}__}"/>
+    <attr sel="#footer" th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>

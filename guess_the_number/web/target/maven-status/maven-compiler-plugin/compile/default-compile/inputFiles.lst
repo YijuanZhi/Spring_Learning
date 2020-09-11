@@ -2,5 +2,6 @@
 /Users/zaczhi/IdeaProjects/guess_the_number/web/src/main/java/com/antra/WebMain.java
 /Users/zaczhi/IdeaProjects/guess_the_number/web/src/main/java/com/antra/util/AttributeNames.java
 /Users/zaczhi/IdeaProjects/guess_the_number/web/src/main/java/com/antra/util/GameMappings.java
+/Users/zaczhi/IdeaProjects/guess_the_number/web/src/main/java/com/antra/util/thymeleaf/DecoupledLogicSetup.java
 /Users/zaczhi/IdeaProjects/guess_the_number/web/src/main/java/com/antra/config/WebConfig.java
 /Users/zaczhi/IdeaProjects/guess_the_number/web/src/main/java/com/antra/controller/GameController.java

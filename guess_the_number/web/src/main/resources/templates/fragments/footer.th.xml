@@ -1,0 +1,4 @@
+<thlogic>
+    <!--    for fragment file, we use th:fragment to say that this is the fragment-->
+    <attr sel="#footer" th:fragment="footerFragment"/>
+</thlogic>

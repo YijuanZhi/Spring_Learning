@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<!--if we use all the thymeleaf in the th.xml file, we can exclude 'xmlns:th="http://www.thymeleaf.org"'-->
+<html lang="en">
+<head id="headId" >
     <meta charset="UTF-8">
-    <title>Guess the Number Game</title>
+    <title>This title will be replaced by thymeleaf fragment!</title>
 </head>
 <body>
     <div align="center">
         <h1>Guess the Number Game</h1>
-        <!--    th:text will replace the text between the a tag, th:href will replace the href-->
-        <h3 th:text="${__${T(com.antra.util.AttributeNames).MAIN_MESSAGE}__}">Main Message Content</h3>
-        <h3 th:text="${__${T(com.antra.util.AttributeNames).RESULT_MESSAGE}__}">Result Message Content</h3>
+        <h3 id="mainMessage">Main Message Content</h3>
+        <h3 id="resultMessage">Result Message Content</h3>
 
-        <!--    @{} is for url. ${} for values   -->
-        <form th:action="@{__${T(com.antra.util.GameMappings).PLAY}__}" action="play" method="post">
+        <form id="gameForm">
             <label for="guess">Enter your guess</label>
             <input id="guess" type="number" name="guess"/>
             <input type="submit" value="Submit"/>
         </form>
 
-        <footer>
-            <p>Create by Yijuan Zhi</p>
-        </footer>
+        <h1 id="footer">
+            <p>Create by MothaFucka</p>
+        </h1>
     </div>
 </body>
 </html>

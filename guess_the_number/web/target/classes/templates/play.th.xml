@@ -1,0 +1,12 @@
+<!--we can write all the thymeleaf attributes in the th.xml file
+this could keep the html code clean and easy to read, just like css file-->
+<thlogic>
+    <!-- ~{} is used for th:replace for the thymeleaf fragment -->
+    <!--    th:text will replace the text between the a tag, th:href will replace the href-->
+    <!--    @{} is for url. ${} for values   -->
+    <attr sel="#headId" th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#mainMessage" th:text="${__${T(com.antra.util.AttributeNames).MAIN_MESSAGE}__}"/>
+    <attr sel="#resultMessage" th:text="${__${T(com.antra.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#gameForm" th:action="@{__${T(com.antra.util.GameMappings).PLAY}__}" action="play" method="post"/>
+    <attr sel="#footer" th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>
