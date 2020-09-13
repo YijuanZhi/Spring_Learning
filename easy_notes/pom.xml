@@ -55,6 +55,12 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+		<!--  since starting from spring 2.3, this package is removed from spring-boot-starter-web, you need to independently add this dependency now -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
