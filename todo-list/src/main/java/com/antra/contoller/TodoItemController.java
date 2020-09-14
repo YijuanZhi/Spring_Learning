@@ -39,7 +39,7 @@ public class TodoItemController {
     }
 
     @GetMapping(Mappings.ADD_ITEM)
-    public String addEditItem(@RequestParam(required = false, defaultValue = "-1") int id, Model model) {
+    public String addEditItem(@RequestParam(required = false, defaultValue = "-1", value = "id") int id, Model model) {
         //if we get the id in RequestParam, we first examine if the item with this id exists
         TodoItem todoItem = todoItemService.getItem(id);
         if(todoItem == null) todoItem = new TodoItem("", "", LocalDate.now());
@@ -58,13 +58,13 @@ public class TodoItemController {
     }
 
     @GetMapping(Mappings.DELETE_ITEM)
-    public String deleteItem(@RequestParam int id) {
+    public String deleteItem(@RequestParam(value = "id") int id) {
         todoItemService.removeItem(id);
         return "redirect:/" + Mappings.ITEMS;
     }
 
     @GetMapping(Mappings.VIEW_ITEM)
-    public String viewItem(@RequestParam int id, Model model) {
+    public String viewItem(@RequestParam(value = "id") int id, Model model) {
         TodoItem todoItem = todoItemService.getItem(id);
         model.addAttribute(AttributeNames.TODO_ITEM, todoItem);
         return ViewNames.VIEW_ITEM;

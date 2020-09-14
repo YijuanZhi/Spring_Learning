@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api") //so that all the mapping below will begin with '/api'
 public class NoteController {
 
     //constants

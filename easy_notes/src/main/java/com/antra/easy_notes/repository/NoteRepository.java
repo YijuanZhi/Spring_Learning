@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository //this tells Spring to bootstrap the repository during component scan.
 public interface NoteRepository extends JpaRepository<Note, Long> {
     /*
-    You don’t need to implement these methods.
+    You don’t need to implement these methods, hence you don't need to implement this interface.
     They are already implemented by Spring Data JPA’s SimpleJpaRepository.
     This implementation is plugged in by Spring automatically at runtime.
     */

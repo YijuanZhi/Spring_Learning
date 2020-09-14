@@ -17,6 +17,7 @@
 <body>
     <div align = "center">
         <table border="1" cellpadding="5">
+            <%-- basically wraps the data input from the form into a model that can be accessed in controller file --%>
             <form:form method="post" modelAttribute="${AttributeNames.TODO_ITEM}">
                 <table>
                     <tr>
