@@ -5,8 +5,22 @@ import java.util.concurrent.*;
 public class Main {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-
         /*
+        * This practice includes:
+        *
+        * 1. Runnable thread creation and Callable thread creation
+        *
+        * 2. Thread pool creation with 4 types of thread pools:
+        *    a. singleThreadPool
+        *    b. cachedThreadPool
+        *    c. fixedThreadPool
+        *    d. scheduledThreadPool
+        *
+        * 3. forkJoinPool
+        *
+        */
+
+        
         //Runnable interface example
         Runnable runnable1 = ()->{System.out.println("This is coming from the runnable thread 1!");};
         Thread t1 = new Thread(runnable1);
@@ -34,11 +48,11 @@ public class Main {
         Thread t5 = new Thread(ft);
         t5.start();
         System.out.println(ft.get());
-         */
 
 
 
-        /*
+
+
         //Callable interface + Thread pool example with fixed thread pool
         ExecutorService executor = Executors.newFixedThreadPool(10);
         List<Future<Integer>> futureList = new ArrayList<>();
@@ -56,9 +70,9 @@ public class Main {
             }
         }
         executor.shutdown();
-         */
 
-        /*
+
+
         //Thread pool example 2 with fixed thread pool running Runnable tasks
         ExecutorService executor2 = Executors.newFixedThreadPool(10);
         for(int i = 0; i < 200; ++i) {
@@ -66,20 +80,19 @@ public class Main {
         }
         executor2.shutdown();
         System.out.println("Thread name: " + Thread.currentThread().getName());
-         */
 
 
-        /*
+
+
         //Tread pool example 3 with cached thread pool running Runnable tasks
         ExecutorService executor3 = Executors.newCachedThreadPool();
         for(int i = 0; i < 100; ++i) {
             executor3.execute(new Task());
         }
         executor3.shutdown();
-         */
 
 
-        /*
+
         //Thread pool example 4 with singled thread pool running callable tasks + Future<T>
         List<Future<Integer>> futureList2 = new ArrayList<>();
         ExecutorService executor4 = Executors.newSingleThreadExecutor();
@@ -96,8 +109,6 @@ public class Main {
             }
         }
         executor4.shutdown();
-
-         */
 
 
         //Thread pool example 5 with scheduled thread pool with can only run with Runnable tasks
