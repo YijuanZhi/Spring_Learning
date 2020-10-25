@@ -22,7 +22,7 @@ public class CarController {
     @ExceptionHandler
     @ResponseStatus(HttpStatus.NOT_FOUND)
     private void carNotFoundHandler(CarNotFoundException ex){
-
+        
     }
 
 }
